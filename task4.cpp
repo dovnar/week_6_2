@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <locale.h>
 
 using namespace std;
@@ -7,7 +7,8 @@ int main()
 {
 	setlocale(LC_ALL, "rus");
 	
-	int namber, b=2;
+	// number
+	int namber, b = 2;
 
 	cout << "Выводим все целые числа В, для которых А делиться без остатка на В*В и не делиться без остатка на В*В*В" "\n"
 		"введите любое целое число А ";
@@ -15,6 +16,7 @@ int main()
 
 	if (namber > 3)
 	{
+		// Эта фраза будет выведена даже тогда, когда не найдено ни одно число
 		cout << "числа соответствующие условиям = ";
 	}
 	else
@@ -23,10 +25,10 @@ int main()
 		return 1;
 	}
 	
-	for (namber; namber >= b*b; b++)
+	for (; namber >= b * b; b++)
 	{
-		if (namber % (b*b) == 0 &&
-			namber % (b*b*b) != 0)
+		if (namber % (b * b) == 0 &&
+			namber % (b * b * b) != 0)
 		{
 			cout << b << ", ";
 		}
