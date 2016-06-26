@@ -6,6 +6,7 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "rus");
+	// number
 	int namberout = 0, namberin;
 
 	cout << "Введите число: ";
@@ -13,11 +14,12 @@ int main()
 
 	while (namberin > 0)
 	{
-		if (namberin % 10 != 3 &&
-			namberin % 10 != 6)
+		int divisionRemainder = namberin % 10;
+		if (divisionRemainder != 3 &&
+			divisionRemainder != 6)
 		{
 			namberout *= 10;
-			namberout += namberin % 10;
+			namberout += divisionRemainder;
 		}
 		namberin /= 10;
 	}
