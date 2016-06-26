@@ -7,6 +7,7 @@ int main()
 {
 	setlocale(LC_ALL, "rus");
 
+	// опечатка: number
 	int namber = 100, namber1, namber2, namber3, count = 0;
 
 	cout << "Подсчитаем количество целых чисел в диапазоне от 100 до 999 у которых все цифры разные" "\n";
